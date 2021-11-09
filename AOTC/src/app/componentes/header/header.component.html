@@ -1,0 +1,33 @@
+
+<script type="text/javascript" src="header.js"></script>
+<header class="navbar bg-dark">
+    <nav class="nav1">
+        <a routerLink='/' (click)="desocultar()"><h1>Oreros TC</h1></a>
+        <div class="arriba">
+            <input type="search" name="Buscar" id="Buscar" placeholder="Buscar">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        
+
+        <div class="abajo">
+            <button *ngIf="boton_user" type="button" class="buton user" (click)="sesion()"><i class="fas fa-user"></i> Usuario</button>
+            <button type="button" class="buton shopping" (click)="shopping()"><i class="fas fa-shopping-cart" ></i> Mi carrito</button>
+            <span class="text-white coll"><i class="far fa-caret-square-down"></i></span>
+        </div>
+    </nav>
+
+    <nav class="nav2">
+<ul>
+    <li><a href="#">Anillos de comprimiso</a></li>
+    <li><a href="#">Anillos de matrimonio</a></li>
+    <li><a href="#">Joyeria mujer</a></li>
+    <li> <a href="#">Joyeria hombre</a></li>
+    <li><a href="#">Joyeria unisex</a></li>
+    <li><a href="#">Relojes</a></li>
+    <li><a href="#">Accesorios</a></li>
+    <li><a href="#">Blog</a></li>
+
+</ul>
+    </nav>
+
+</header>

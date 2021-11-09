@@ -1,0 +1,91 @@
+  <div class="principal  ">
+      <div id="carouselExampleCaptions" class="carousel carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="https://p4.wallpaperbetter.com/wallpaper/402/259/723/reflection-shine-black-background-wallpaper-preview.jpg" class="d-block" alt="Imagen anilos " width="100%" height="400px">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-white">Precio del oro Actual</h5>
+                <p class="text-white">Por KL: $1,154,480.00 <br>
+                                      Por Gramo: $1,154</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://p4.wallpaperbetter.com/wallpaper/784/60/1012/the-dark-background-diamonds-gems-cut-mirror-hd-wallpaper-preview.jpg" class="d-block" alt="imagen dos anillos" width="100%" height="400px">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white">Aporvecha nuestras Ofertas</h5>
+                  <p class="text-white">35% de descuento en anillos para compromiso.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://p4.wallpaperbetter.com/wallpaper/508/579/694/reflection-black-background-bracelets-picture-gems-hd-wallpaper-preview.jpg" class="d-block" alt="imagen pulseras de oro" width="100%" height="450px">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white">Aprovecha nuestras ofertas</h5>
+                  <p class="text-white">20% de descuento en joyas para mujer.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <hr>
+        </div>
+      
+  </div>
+
+  <div class="garantias">
+      <div><h3><i class="far fa-heart"></i>Garantia de <br> satisfaccion</h3></div>
+      <div><h3><i class="fas fa-truck-moving"></i>Envios gratis <br> Hasta tu casa</h3></div>
+      <div><h3><i class="fas fa-shield-alt"></i> Compra Segura</h3></div>
+      <div><h3> <i class="fas fa-credit-card"></i> Meses sin intereses <br> disponibles</h3></div>
+
+  </div>
+  <hr>
+  <div class="seccion-productos">
+  <h1>Nueva Coleccion</h1>
+  </div>
+
+  <div class="nuevo-productos">
+      <img src="https://www.joyeriasbizzarro.com/media/wysiwyg/home-banners/sep_2020/2021_Eres_Tu_HomePage_Desktop_06.jpg" alt="imagen palabras eres tu">
+  <br>
+  <div class="imagenes">
+      <img src="https://www.joyeriasbizzarro.com/media/wysiwyg/home-banners/sep_2020/Sin_t_tulo-1_1_.png" alt="3 anillos">
+      <img src="https://www.joyeriasbizzarro.com/media/wysiwyg/home-banners/sep_2020/600X600_DESK.png" alt="un anillo">
+  </div>
+  </div>
+
+  <div class="productos" id=productos>
+    <h2>Algunos de nuestros productos</h2>
+    <hr>
+    <div class="fondo">
+
+        <div class="targeta bg-dark" *ngFor="let pro of listadop_roductos;">
+          <div class="imagen-producto">
+            <img src="{{ pro.img }}" alt="{{pro.descripcion}}">
+          </div>
+        
+          <div class="titulo-producto">
+            <h4>{{pro.nombre}}</h4>
+          </div>
+
+          <div class="info-producto">
+            <div class="precio-producto">
+                <h6>{{pro.precio | currency:'MXN'}}</h6>
+            </div>
+          <div class="btn-agregarcarrito">
+            <button type="button" class="btn bg-white"> Agregar al carrito </button>
+          </div>
+
+          </div>
+        </div>
+    </div>
+  </div>

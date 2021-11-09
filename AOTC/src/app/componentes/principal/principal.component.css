@@ -1,0 +1,144 @@
+.garantias{
+    padding: 10px;
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccion-productos{
+    padding: 10px;
+    background-color: rgb(83, 71, 255);
+    width: 100%;
+    height: auto;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.nuevo-productos{
+    margin-top: 10px;
+}
+
+.imagenes img{
+    margin: 0px 0px 20px 20px;
+}
+
+
+.productos{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+   
+}
+
+.productos h2{
+    padding: 10px;
+}
+
+.fondo{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: 100%;
+    height: auto;
+   gap: 5px;
+    padding: 20px;
+}
+
+
+.targeta{
+    width: 300px;
+    height: 210px;
+    overflow: hidden;
+  
+    border-radius: 20px;
+
+    transition: 0.4s;
+}
+
+.targeta:hover{
+    height: 300px;
+}
+
+
+.imagen-producto{
+    width: 100%;
+    text-align: center;
+}
+
+.imagen-producto img {
+    padding: 15px;
+    width: 150px;
+}
+
+.titulo-producto{
+    text-align: center;
+    color: white;
+}
+
+.info-producto{
+    width: 100%;
+}
+
+.precio-producto{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.btn-agregarcarrito{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-agregarcarrito button{
+    
+    border-style: none;
+    color: black;
+
+}
+
+
+@media screen and (max-width: 700px){
+
+    .garantias{
+        width: 100%;
+        height: auto;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        text-align: justify;
+       
+    }
+
+    .garantias div h3{
+        font-size: 18px;
+    }
+
+
+    .nuevo-productos img{
+        margin: 0px;
+        width: 100%;
+    }
+
+
+.productos{
+    text-align: center;
+}
+    .fondo{
+        display: block;
+      
+    }
+
+    .targeta{
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+}
